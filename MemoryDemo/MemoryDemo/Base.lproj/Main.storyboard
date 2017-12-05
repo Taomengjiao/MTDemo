@@ -33,6 +33,9 @@
                                 <rect key="frame" x="86" y="174" width="202" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="文件上传、下载"/>
+                                <connections>
+                                    <segue destination="D8q-Yu-zfc" kind="push" id="9ol-P8-OMj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-fD-RW6">
                                 <rect key="frame" x="86" y="263" width="202" height="43"/>
@@ -57,6 +60,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-252" y="-596.85157421289364"/>
+        </scene>
+        <!--文件上传和下载-->
+        <scene sceneID="aS2-Ax-txs">
+            <objects>
+                <viewController id="D8q-Yu-zfc" customClass="FileUploadAndDownloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skG-NZ-bda"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Zu-RS-W94"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uWj-f7-n9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-e5-QRf">
+                                <rect key="frame" x="156" y="149" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="文件上传"/>
+                                <connections>
+                                    <action selector="fileUploadAction:" destination="D8q-Yu-zfc" eventType="touchUpInside" id="1rI-Md-z7L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co7-5a-jRG">
+                                <rect key="frame" x="156" y="283" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="文件下载"/>
+                                <connections>
+                                    <action selector="fileDownloadAction:" destination="D8q-Yu-zfc" eventType="touchUpInside" id="7Js-YB-49a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="文件上传和下载" id="R5B-oG-Y9w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07A-wy-VAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="-279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e5T-Q5-Iwa">

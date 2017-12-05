@@ -35,6 +35,10 @@
 		38A4871D1FD52F56004AF50E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A486F71FD52491004AF50E /* MAMapKit.framework */; };
 		38A487201FD5303C004AF50E /* MTCustomAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A4871F1FD5303C004AF50E /* MTCustomAnnotationViewController.m */; };
 		38A487231FD531A4004AF50E /* MTMoveAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A487221FD531A4004AF50E /* MTMoveAnnotationViewController.m */; };
+		38A487271FD6458C004AF50E /* FileUploadAndDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A487261FD6458C004AF50E /* FileUploadAndDownloadViewController.m */; };
+		38A4872A1FD6480C004AF50E /* FileUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A487291FD6480C004AF50E /* FileUploadViewController.m */; };
+		38A4872D1FD6481E004AF50E /* FileDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A4872C1FD6481E004AF50E /* FileDownloadViewController.m */; };
+		38A487351FD68746004AF50E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38A487341FD68746004AF50E /* AMap.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,14 @@
 		38A4871F1FD5303C004AF50E /* MTCustomAnnotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCustomAnnotationViewController.m; sourceTree = "<group>"; };
 		38A487211FD531A4004AF50E /* MTMoveAnnotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMoveAnnotationViewController.h; sourceTree = "<group>"; };
 		38A487221FD531A4004AF50E /* MTMoveAnnotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMoveAnnotationViewController.m; sourceTree = "<group>"; };
+		38A487251FD6458C004AF50E /* FileUploadAndDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUploadAndDownloadViewController.h; sourceTree = "<group>"; };
+		38A487261FD6458C004AF50E /* FileUploadAndDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUploadAndDownloadViewController.m; sourceTree = "<group>"; };
+		38A487281FD6480C004AF50E /* FileUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileUploadViewController.h; sourceTree = "<group>"; };
+		38A487291FD6480C004AF50E /* FileUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileUploadViewController.m; sourceTree = "<group>"; };
+		38A4872B1FD6481E004AF50E /* FileDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloadViewController.h; sourceTree = "<group>"; };
+		38A4872C1FD6481E004AF50E /* FileDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloadViewController.m; sourceTree = "<group>"; };
+		38A4872F1FD68614004AF50E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MemoryDemo/MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
+		38A487341FD68746004AF50E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,8 @@
 		38A486C41FD4FC0F004AF50E /* MemoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				38A487341FD68746004AF50E /* AMap.bundle */,
+				38A487241FD64520004AF50E /* 文件上传下载 */,
 				38A487181FD525FA004AF50E /* 高德地图 */,
 				38A486F81FD5249A004AF50E /* AMapFoundationKit.framework */,
 				38A486F71FD52491004AF50E /* MAMapKit.framework */,
@@ -199,6 +213,7 @@
 		38A486F91FD524C9004AF50E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38A4872F1FD68614004AF50E /* AMap.bundle */,
 				38A487161FD5257D004AF50E /* libc++.tbd */,
 				38A487141FD52570004AF50E /* libstdc++.6.0.9.tbd */,
 				38A487121FD52565004AF50E /* libz.tbd */,
@@ -229,6 +244,19 @@
 				38A487221FD531A4004AF50E /* MTMoveAnnotationViewController.m */,
 			);
 			path = "高德地图";
+			sourceTree = "<group>";
+		};
+		38A487241FD64520004AF50E /* 文件上传下载 */ = {
+			isa = PBXGroup;
+			children = (
+				38A487251FD6458C004AF50E /* FileUploadAndDownloadViewController.h */,
+				38A487261FD6458C004AF50E /* FileUploadAndDownloadViewController.m */,
+				38A487281FD6480C004AF50E /* FileUploadViewController.h */,
+				38A487291FD6480C004AF50E /* FileUploadViewController.m */,
+				38A4872B1FD6481E004AF50E /* FileDownloadViewController.h */,
+				38A4872C1FD6481E004AF50E /* FileDownloadViewController.m */,
+			);
+			path = "文件上传下载";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A487351FD68746004AF50E /* AMap.bundle in Resources */,
 				38A486D21FD4FC0F004AF50E /* LaunchScreen.storyboard in Resources */,
 				38A486CF1FD4FC0F004AF50E /* Assets.xcassets in Resources */,
 				38A486CD1FD4FC0F004AF50E /* Main.storyboard in Resources */,
@@ -365,11 +394,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A487231FD531A4004AF50E /* MTMoveAnnotationViewController.m in Sources */,
+				38A4872A1FD6480C004AF50E /* FileUploadViewController.m in Sources */,
 				38A486CA1FD4FC0F004AF50E /* ViewController.m in Sources */,
 				38A487201FD5303C004AF50E /* MTCustomAnnotationViewController.m in Sources */,
 				38A486D51FD4FC0F004AF50E /* main.m in Sources */,
 				38A4871B1FD529D2004AF50E /* AMapMapViewController.m in Sources */,
+				38A4872D1FD6481E004AF50E /* FileDownloadViewController.m in Sources */,
 				38A486C71FD4FC0F004AF50E /* AppDelegate.m in Sources */,
+				38A487271FD6458C004AF50E /* FileUploadAndDownloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
