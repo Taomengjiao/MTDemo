@@ -17,9 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [AMapServices sharedServices].enableHTTPS = YES;
-    [AMapServices sharedServices].apiKey = @"ad2b6e7791668c35f2224e14d4871153";
     ///初始化地图
     MAMapView *_mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     
