@@ -40,7 +40,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-fD-RW6">
                                 <rect key="frame" x="86" y="263" width="202" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="高清图片上传、下载、剪切"/>
+                                <state key="normal" title="高清图片上传、下载"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-Vz-UL9">
                                 <rect key="frame" x="86" y="361" width="202" height="43"/>
@@ -52,14 +52,45 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="自定义返回按钮，侧滑回上一层"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e27-Mq-xf2">
+                                <rect key="frame" x="86" y="516" width="202" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="图片剪切"/>
+                                <connections>
+                                    <segue destination="DRI-K2-SCx" kind="push" id="JgP-AB-1Mw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="demo" id="b3d-YJ-Sza"/>
+                    <navigationItem key="navigationItem" title="demo" id="b3d-YJ-Sza">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="Rig-vF-I2r"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-252" y="-596.85157421289364"/>
+        </scene>
+        <!--图片剪切-->
+        <scene sceneID="MZv-BO-ip2">
+            <objects>
+                <viewController id="DRI-K2-SCx" customClass="ImageShearViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WdD-FD-wNz"/>
+                        <viewControllerLayoutGuide type="bottom" id="hEM-fa-PmM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nuR-SW-r8X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="图片剪切" id="pyt-hD-s50">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="sSZ-dB-EAj"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQA-Zp-zE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="101"/>
         </scene>
         <!--文件上传和下载-->
         <scene sceneID="aS2-Ax-txs">
