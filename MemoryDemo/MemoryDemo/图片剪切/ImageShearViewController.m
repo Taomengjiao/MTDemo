@@ -33,14 +33,11 @@
 
     [self.view addSubview:imageView];
     imageView.image = [self cricleImageWithName:imageView.image boardWidth:2 boardColor:[UIColor redColor]];
-
     
-
     
+    
+   
 }
-
-
-
 
 
 
